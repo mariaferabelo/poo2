@@ -1,11 +1,13 @@
 import java.awt.Color;
 import java.awt.FlowLayout;
+import java.awt.GridLayout;
 
 import javax.swing.*;
 
 public class Tela extends JFrame {
     private JPanel painel;
     private JButton[] jbBotoes;
+    
     
     
     public Tela(){
@@ -31,13 +33,11 @@ public class Tela extends JFrame {
 
     public void configurarPainel(){
         painel.setBackground(Color.PINK);
-        painel.setLayout(new FlowLayout(FlowLayout.RIGHT, 20, 20));
+        //painel.setLayout(new FlowLayout(FlowLayout.RIGHT, 20, 20));
+        painel.setLayout(new GridLayout(3, 2, 15, 15));
         for (int i=0; i<5; i++){
             painel.add (jbBotoes[i]);
         }
         
     }
-
-
-
 }

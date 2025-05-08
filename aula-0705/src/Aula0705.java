@@ -1,7 +1,7 @@
 public class Aula0705 {
 
     public static void main(String[] args) {
-        Tela t = new Tela();
+        Tela2 t = new Tela2();
         t.configurarJanela();
     }
 }
